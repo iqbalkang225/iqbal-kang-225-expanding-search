@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  background: linear-gradient(#ffb88e, #ea5753 );
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.form{
+  position: relative;
+}
+
+.input{
+  padding: 10px;
+  border: none;
+  height: 40px;
+  width: 0;
+  transition: all 0.2s;
+}
+
+.input.active{
+  width: 250px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+
+.btn{
+  position: absolute;
+  right: 0px;
+  color: #ea5753;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+
+}
+
+.btn:hover{
+  color: #ffb88e;
+}
